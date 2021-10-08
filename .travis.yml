@@ -9,4 +9,4 @@ before_script:
   - emulator -avd test -no-skin -no-audio -no-window &
   - ./wait_for_emulator
 
-script: mvn install -Pintegration-tests -Dandroid.device=test
+script: mvn -T 1C install -Pintegration-tests -Dandroid.device=test
